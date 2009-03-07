@@ -7,5 +7,9 @@ class Shoes
     def intersects?(other_area)
       area.intersects?(other_area)
     end
+
+    def contains_point?(point)
+      area.contains_point?(point)
+    end
   end
 end

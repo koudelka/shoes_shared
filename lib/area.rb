@@ -23,6 +23,11 @@ class Area
     left < other_right
   end
 
+  def contains_point?(point)
+    point.x > top_left.x && point.x < bottom_right.x &&
+    point.y > top_left.y && point.y < bottom_right.y
+  end
+
   def to_s
     "#{top_left} -> #{bottom_right}"
   end
